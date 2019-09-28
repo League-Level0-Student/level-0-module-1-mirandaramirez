@@ -19,15 +19,24 @@ public class TheRiddler {
 		if(answer.equals("there is 1 left")) {
 		score++;
 		JOptionPane.showMessageDialog(null,"correct");
+		
 		}
-		// 5. Otherwise, say "wrong" and tell them the answer
 		else {
-        	
-        }
+		JOptionPane.showMessageDialog(null,"wrong");
+         }
+		// 5. Otherwise, say "wrong" and tell them the answer
+		
 		// 6. Add some more riddles
-
+		JOptionPane.showInputDialog("why do bees hum");
+		if(answer.equals("because they don't know the words")){
+		score++;
+		JOptionPane.showMessageDialog(null,"correct");
+	    }
+	    else {
+	    JOptionPane.showMessageDialog(null,"wrong");
+	    }
 		// 2. Make a pop up to show the score.
-		JOptionPane.showMessageDialog(null,"youre score is +0");
+		JOptionPane.showMessageDialog(null,"youre score is "+score);
 	}
 }
 
